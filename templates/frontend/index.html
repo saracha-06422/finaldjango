@@ -1,0 +1,33 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Detali</th>
+                <th>Barcode</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Atatus</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in products %}
+            <tr>
+                <td>{{i.product_name}}</td>
+                <td>{{i.product_detail}}</td>
+                <td>{{i.product_barcode}}</td>
+                <td>{{i.product_qty}}</td>
+                <td>{{i.product_price}}</td>
+                <td>{{i.product_status}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
