@@ -1,0 +1,30 @@
+body{
+    overflow: hidden; /* Hide scrollbars */
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 50%;
+    width: 400px;
+    margin: 300px;
+    position: relative;
+    bottom: 270;
+  }
+.social {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    bottom: 520px;
+    left: 20px;
+}
+.social i {
+    padding-right: 30px;
+    font-size: 30px;
+    color: #929b9c;
+}
+.social i:hover {
+    color: #333;
+}

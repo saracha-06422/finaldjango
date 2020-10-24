@@ -7,6 +7,7 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="static/css/login.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -18,10 +19,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index' %}"> Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'login' %}"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'about' %}"> About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'about' %}"> AboutMe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'skill' %}"> Skill <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'education' %}"> Education <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'contact' %}"> Contact <span class="sr-only">(current)</span></a>

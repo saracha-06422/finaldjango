@@ -1,0 +1,16 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Login {% endblock %}
+{% load static %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+<form class="Login">
+        <h2>LOGIN</h2>
+        <input class="textbox" type="text" placeholder="Username">
+        <input class="textbox" type="password" placeholder="Password">
+        <input class="btn-submit" type="submit" value="Login" formaction="https://www.google.co.th/">
+</form>
+</body>
+{% endblock %}
